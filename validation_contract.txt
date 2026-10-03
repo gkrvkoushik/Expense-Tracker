@@ -1,0 +1,28 @@
+expense_id:
+required
+int
+>=0 value
+
+amount:
+required
+double  
+>0 value
+
+
+category:
+string(empty string not accepted)(stripped at both ends)
+required
+
+description:
+optional(stripped at both ends)
+
+date_paid:
+required
+automatically take current timestamp
+date-format  -  YYYY-MM-DDTHH:mm:ss (timestamp)
+
+
+payment_method:
+required
+string
+upi/netbanking/cash
